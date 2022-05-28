@@ -1,0 +1,11 @@
+// px->vwの計算
+//--------------------------------------------------------------------------
+@function _get_vw($size, $viewport: 375) {
+  $rate: calc(100 / $viewport);
+  @return $rate * $size * 1vw;
+}
+
+@mixin vw($property, $size: 10, $viewsize: 375) {
+  //#{$property}: $size * 1px;
+  #{$property}: _get_vw($size, $viewsize);
+}

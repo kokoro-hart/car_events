@@ -1,0 +1,8 @@
+// max関数の指定
+//--------------------------------------------------------------------------
+@mixin max-function($property, $size, $viewport) {
+  $rate: calc(100 / $viewport);
+  $result: calc($rate * $size * 1vw);
+
+  #{$property}: unquote('max(#{$result}, #{$size}px)');
+}

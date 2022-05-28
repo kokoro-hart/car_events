@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+/* layout .l-header
+   ----------------------------------------------------------------- */
+
+.l-header {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  z-index: map-get($layer, header);
+  width: 100%;
+}

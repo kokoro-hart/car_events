@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+/* project .p-footer
+   ----------------------------------------------------------------- */
+
+.p-footer {
+  background-color: $color-accent;
+  color: $color-base;
+  text-align: center;
+}
+
+.p-footer__copyright {
+  @include fz(14, 16);
+  font-weight: 700;
+}
