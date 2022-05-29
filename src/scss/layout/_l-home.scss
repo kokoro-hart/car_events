@@ -1,0 +1,20 @@
+@use "../global" as *;
+
+/* layout .l-home
+   ----------------------------------------------------------------- */
+
+.l-home {
+
+}
+
+.l-home__pickup {
+  position: relative;
+  width: 82%;
+  max-width: 824px;
+  margin-top: -49px;
+  z-index: 100;
+
+  @include mq(lg) {
+    width: 100%;
+  }
+}

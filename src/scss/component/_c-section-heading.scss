@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+/* project .p-pickup
+   ----------------------------------------------------------------- */
+
+.c-section-heading {
+  font-family: $font-family-ja;
+  span {
+    color: $color-accent;
+  }
+}
+
+.c-section-heading--pickup {
+  @include fz(18);
+  @include lh(1.2);
+  letter-spacing: 0.1em;
+}

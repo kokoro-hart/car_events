@@ -16,6 +16,7 @@
    ----------------------------------------------------------------- */
 @use "layout/l-page-wrapper";
 @use "layout/l-header";
+@use "layout/l-home";
 @use "layout/l-footer";
 @use "layout/l-container";
 
@@ -23,6 +24,7 @@
    ----------------------------------------------------------------- */
 @use "component/c-button-primary";
 @use "component/c-button-drawer";
+@use "component/c-section-heading";
 
 
 /* Project (prefix: p- )
@@ -33,6 +35,7 @@
 @use "project/p-drawer-nav";
 @use "project/p-mv";
 @use "project/p-counter";
+@use "project/p-pickup";
 
 
 /* Utitlity (prefix: u- )

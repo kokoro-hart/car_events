@@ -38,5 +38,19 @@ block main
         .p-mv__counter.p-counter
           span.p-counter__current: span#js-number.p-counter__number            
           span#js-total.p-counter__total
-    //- ニュース
-    section.p-pickup-news
+      .p-mv__scroll  
+        | SCROLL
+    //- ピックアップニュース
+    article.p-pickup.l-home__pickup
+      .p-pickup__inner 
+        .p-pickup__heading 
+          h2.c-section-heading.c-section-heading--pickup
+            | NE#[span W]S
+        .p-pickup__post
+          .p-pickup__body
+            time.p-pickup__date 
+              | 2020.09.28
+            h3.p-pickup__title 
+              | Webサイトをリニューアルしました。Webサイトをリニューアルしました。Webサイトをリニューアルしました。Webサイトをリニューアルしました。
+          a.p-pickup__link(href="/") 
+            | View more

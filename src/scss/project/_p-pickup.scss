@@ -1,0 +1,106 @@
+@use "../global" as *;
+
+/* project .p-pickup
+   ----------------------------------------------------------------- */
+
+.p-pickup {
+  background-color: $color-primary-dark;
+  color: $color-base;
+  border-left: 4px solid $color-accent;
+}
+
+.p-pickup__inner {
+  padding: 20px 25px;
+
+  @include mq(lg) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 40px 50px;
+  }
+}
+
+.p-pickup__heading {
+  width: 100%;
+
+  @include mq(lg) {
+    max-width: 101px;
+  }
+}
+
+.p-pickup__post {
+  width: 100%;
+  margin-top: 24px;
+
+  @include mq(md) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  @include mq(lg) {
+    margin-top: 0;
+    width: calc(100% - 101px);
+  }
+}
+
+.p-pickup__body {
+  @include mq(md) {
+    display: flex;
+    align-items: baseline;
+    width: calc(100% - 120px);
+  }
+}
+
+.p-pickup__date {
+  max-width: 112px;
+  width: 100%;
+  @include fz(14);
+  @include lh(1.2);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-family: $font-family-ja;
+}
+
+.p-pickup__title {
+  @include fz(14);
+  @include lh(1.4);
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: $font-family-ja;
+  margin-top: 8px;
+
+  @include mq(md) {
+    width: calc(100% - 112px);
+    margin-top: 0;
+    padding-right: 10px;
+  }
+}
+
+.p-pickup__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  margin-top: 18px;
+  margin-left: auto;
+  padding-left: 30px;
+  @include fz(13);
+  @include lh(1.2);
+  text-align: right;
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 1px;
+    background-color: $color-base;
+  }
+}
