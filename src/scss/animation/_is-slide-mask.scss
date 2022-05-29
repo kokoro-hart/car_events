@@ -1,0 +1,86 @@
+@use "../global" as *;
+
+/* animation is-slide-mask
+   ----------------------------------------------------------------- */
+
+.is-slide-mask {
+  position: relative;
+  display: inline-block;
+  clip-path: inset(0 100% 0 0);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-base;
+  }
+}
+
+.is-anm-started {
+  .is-slide-mask {
+    animation: p-mv-marker 1s 0.5s both;
+  }
+  .is-slide-mask::after {
+    animation: p-mv-markerBg 1s 0.5s both;
+  }
+}
+
+.is-anm-started > :last-child {
+  .is-slide-mask,
+  .is-slide-mask::after {
+    animation-delay: 0.6s;
+  }
+}
+
+.is-anm-finished {
+  .is-slide-mask {
+    animation: p-mv-markerHide 0.5s both;
+  }
+  .is-slide-mask::after {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+@keyframes p-mv-marker {
+  60%,
+  100% {
+    clip-path: inset(0);
+  }
+}
+
+@keyframes p-mv-markerBg {
+  60% {
+    clip-path: inset(0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+@keyframes p-mv-markerHide {
+  0% {
+    clip-path: inset(0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+@keyframes p-mv-fraction {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-110%);
+    opacity: 1;
+  }
+  50.1% {
+    transform: translateY(110%);
+    opacity: 0;
+  }
+}

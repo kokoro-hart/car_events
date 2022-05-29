@@ -1,0 +1,25 @@
+@use "../global" as *;
+
+/* project .p-global-nav
+   ----------------------------------------------------------------- */
+
+.p-global-nav__list {
+  display: flex;
+}
+
+.p-global-nav__item {
+  &:not(:first-child) {
+    @include mq(md) {
+      margin-left: 56px;
+    }
+  }
+}
+
+.p-global-nav__link {
+  display: block;
+  color: $color-base;
+  @include fz(14);
+  @include lh(1.2);
+  letter-spacing: 0.35px;
+  font-weight: 700;
+}

@@ -1,0 +1,80 @@
+@use "../global" as *;
+
+/* project .p-first-view
+   ----------------------------------------------------------------- */
+
+.p-mv {
+  position: relative;
+  width: 100%;
+}
+
+.p-mv__picture {
+  overflow: hidden;
+}
+
+.p-mv__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 1.5s;
+  pointer-events: none;
+}
+
+.p-mv__content-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.p-mv__content {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: auto;
+  z-index: 2;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+  @include mq(md) {
+    left: 40px;
+  }
+}
+
+.p-mv__heading {
+  color: $color-base;
+  @include max-function("font-size", 24, 375);
+  @include lh(1.2);
+  letter-spacing: 6px;
+  white-space: nowrap;
+
+  @include mq(lg) {
+    @include vw("font-size", 40, 1200);
+  }
+}
+
+.p-mv__lead {
+  margin-top: 18px;
+  @include fz(14);
+  @include lh(1.2);
+  letter-spacing: 3.9px;
+  color: $color-base;
+
+  @include mq(lg) {
+    @include vw("font-size", 14, 1200);
+  }
+}
+
+.p-mv__counter {
+  position: absolute;
+  top: 60%;
+  right: 3%;
+  z-index: 2;
+
+  @include mq(md) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

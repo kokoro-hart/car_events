@@ -8,12 +8,18 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 14px;
-  padding-left: 14px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @include mq(md) {
     max-width: 1280px;
     padding-right: 40px;
     padding-left: 40px;
+  }
+}
+
+.l-container--large {
+  @include mq(1920px, min) {
+    @include vw("max-width", 1280, 1920);
   }
 }

@@ -1,0 +1,42 @@
+extends ./modules/_template
+block page
+  - var page = 'home';
+
+block main
+  main.l-main.l-home
+    //- メインビジュアル
+    section.p-mv
+      .p-mv__slider.swiper
+        .swiper-wrapper
+          picture.p-mv__picture.swiper-slide
+            //- source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
+            img.p-mv__img(src="../img/mv03.jpg", alt="メインビジュアル01")
+          picture.p-mv__picture.swiper-slide
+            //- source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
+            img.p-mv__img(src="../img/mv02.jpg", decoding="async" alt="メインビジュアル02")
+          picture.p-mv__picture.swiper-slide
+            //- source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
+            img.p-mv__img(src="../img/mv01.png", decoding="async" alt="メインビジュアル03")
+        .p-mv__content-wrapper.l-container.l-container--large
+          .p-mv__content.js-slider-content
+            h2.p-mv__heading: span.is-slide-mask 
+              | Bring 
+              br.u-hidden-lg-up
+              | back memories
+            p.p-mv__lead: span.is-slide-mask
+              | Dolor sit amet.
+          .p-mv__content.js-slider-content
+            h2.p-mv__heading: span.is-slide-mask
+              | Sed eiusmod
+            p.p-mv__lead: span.is-slide-mask
+              | Tempor incidunt ut labore.
+          .p-mv__content.js-slider-content
+            h2.p-mv__heading: span.is-slide-mask
+              | Lorem ipsum
+            p.p-mv__lead: span.is-slide-mask
+              | Ad minim veniam.
+        .p-mv__counter.p-counter
+          span.p-counter__current: span#js-number.p-counter__number            
+          span#js-total.p-counter__total
+    //- ニュース
+    section.p-pickup-news

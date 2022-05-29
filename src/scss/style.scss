@@ -1,3 +1,12 @@
+/* external
+   ----------------------------------------------------------------- */
+@use "external/swiper";
+@use "external/swiper-custom";
+
+/* animation
+   ----------------------------------------------------------------- */
+@use "animation/is-slide-mask";
+
 /* Foundation
    ----------------------------------------------------------------- */
 @use "foundation/ress";
@@ -23,6 +32,7 @@
 @use "project/p-global-nav";
 @use "project/p-drawer-nav";
 @use "project/p-mv";
+@use "project/p-counter";
 
 
 /* Utitlity (prefix: u- )

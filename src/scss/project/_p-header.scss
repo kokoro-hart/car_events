@@ -1,0 +1,39 @@
+@use "../global" as *;
+
+/* project .p-header
+   ----------------------------------------------------------------- */
+
+.p-header {
+  color: $color-base;
+  mix-blend-mode: difference;
+}
+
+.p-header__inner {
+  position: relative;
+  z-index: map-get($layer, header);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  @include mq(md) {
+    padding-top: 40px;
+  }
+}
+
+.p-header__logo {
+  position: relative;
+  width: 60px;
+
+  @include mq(md) {
+    width: 90px;
+  }
+}
+
+.p-header__logo-link {
+  display: block;
+
+  svg {
+    width: 100%;
+  }
+}

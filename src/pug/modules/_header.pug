@@ -1,0 +1,31 @@
+header.l-header.p-header
+  .p-header__inner.l-container.l-container--large
+    h1.p-header__logo 
+      a.p-header__logo-link(href="/")
+        include ../svg/_logo.pug
+        //- img(src="../img/logo.png", alt="COMPANY")
+    nav.p-global-nav.u-hidden-md-down
+      ul.p-global-nav__list
+        li.p-global-nav__item
+          a.p-global-nav__link(href="#news") News
+        li.p-global-nav__item
+          a.p-global-nav__link(href="#concept") Concept 
+        li.p-global-nav__item
+          a.p-global-nav__link(href="#gallery") Gallery
+        li.p-global-nav__item
+          a.p-global-nav__link(href="/") Access
+        li.p-global-nav__item
+          a.p-global-nav__link(href="/") Contact
+    button#js-drawer-button.c-button-drawer.u-hidden-md-up(aria-expanded="false")
+nav#js-drawer-nav.p-drawer-nav.u-hidden-md-up
+  ul.p-drawer-nav__list
+    li.p-drawer-nav__item
+      a.p-drawer-nav__link(href="#news") News
+    li.p-drawer-nav__item
+      a.p-drawer-nav__link(href="#concept") Concept 
+    li.p-drawer-nav__item
+      a.p-drawer-nav__link(href="#gallery") Gallery
+    li.p-drawer-nav__item
+      a.p-drawer-nav__link(href="/") Access
+    li.p-drawer-nav__item
+      a.p-drawer-nav__link(href="/") Contact

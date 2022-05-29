@@ -1,0 +1,44 @@
+@use "../global" as *;
+
+/* project .p-counter
+   ----------------------------------------------------------------- */
+
+.p-counter {
+  color: $color-base;
+}
+
+.p-counter__number {
+  display: inline-block;
+}
+
+.p-counter__current {  
+  display: inline-block;
+  overflow: hidden;
+  padding-right: 0.15em;
+  @include max-function("font-size", 24, 375);
+
+
+  @include mq(lg) {
+    @include vw("font-size", 40, 1200);
+  }
+
+  .p-counter__number {
+    &.is-anm-started {
+      animation: p-mv-fraction 0s;
+    }
+  }
+}
+
+.p-counter__total {
+  vertical-align: 0.25em;
+  @include max-function("font-size", 18, 375);
+
+  @include mq(lg) {
+    vertical-align: 0.3em;
+    @include vw("font-size", 24, 1200);
+  }
+
+  &::before {
+    content: " / ";
+  }
+}
