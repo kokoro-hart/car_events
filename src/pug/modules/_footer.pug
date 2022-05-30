@@ -1,3 +1,35 @@
 footer.l-footer.p-footer
   .p-footer__inner
-    p.p-footer__copyright @copyright 2022
+    ul.p-footer__nav
+      li.p-footer__nav-item
+        a.p-footer__nav-link(href="#news") 
+          | News
+      li.p-footer__nav-item
+        a.p-footer__nav-link(href="#concept") 
+          | Concept 
+      li.p-footer__nav-item
+        a.p-footer__nav-link(href="#gallery") 
+          | Gallery
+      li.p-footer__nav-item
+        a.p-footer__nav-link(href="/") 
+          | Access
+      li.p-footer__nav-item
+        a.p-footer__nav-link(href="/") 
+          | Contact
+    h1.p-footer__logo 
+      a.p-footer__logo-link(href="/")
+        include ../svg/_logo.pug
+    address.p-footer__info
+      p.p-footer__access
+        | 〒123-4567　兵庫県姫路市123-4567
+      a.p-footer__tel(href="tel:012-12-3456" target="_blank" rel="noopener noreferrer") 
+        | Tel: #[span 012-12-3456]
+      ul.p-footer__sns 
+        li.p-footer__sns-item
+          a.p-footer__sns-link(href="/" target="_blank" rel="noopener noreferrer")
+            include ../svg/_twitter.pug
+        li.p-footer__sns-item
+          a.p-footer__sns-link(href="/" target="_blank" rel="noopener noreferrer")
+            include ../svg/_facebook.pug
+      p.p-footer__copyright: small(lang="en")
+        | copyright © Torino MUSEUM All rights reserved. 
