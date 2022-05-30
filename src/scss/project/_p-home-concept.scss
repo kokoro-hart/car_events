@@ -1,0 +1,94 @@
+@use "../global" as *;
+
+/* project .p-home-concept 
+   ----------------------------------------------------------------- */
+
+.p-home-concept {
+}
+
+.p-home-concept__inner {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.p-home-concept__content {
+  @include mq(md) {
+    padding-top: 29px;
+    width: calc(56% - 8% / 2);
+  }
+}
+
+.p-home-concept__body {
+  margin-top: 32px;
+}
+
+.p-home-concept__head {
+  @include fz(28, 36);
+  @include lh(1.4);
+  letter-spacing: 2.7px;
+  font-family: $font-family-ja;
+  span {
+    color: $color-accent;
+  }
+}
+
+.p-home-concept__foot {
+  margin-top: 48px;
+  @include fz(14);
+  @include lh(2.7);
+  font-family: $font-family-ja;
+
+  @include mq(lg) {
+    margin-top: 95px;
+  }
+}
+
+.p-home-concept__link-wrapper {
+  width: 100%;
+  margin-top: 32px;
+  text-align: right;
+
+  @include mq(lg) {
+    margin-top: 62px;
+  }
+}
+
+.p-home-concept__img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+  @include mq(md) {
+    margin-top: 0;
+    width: calc(44% - 8% / 2);
+  }
+}
+
+.p-home-concept__picture {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: calc(50% - 18px / 2);
+
+  & + .p-home-concept__picture {
+    transform: translateY(52px);
+  }
+}
+
+.p-home-concept__img {
+  @include mq(md) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

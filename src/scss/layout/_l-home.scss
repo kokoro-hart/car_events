@@ -18,3 +18,14 @@
     width: 100%;
   }
 }
+
+.l-home__concept {
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 100vh;
+
+  @include mq(md) {
+    padding-top: 123px;
+    padding-bottom: 52px;
+  }
+}

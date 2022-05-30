@@ -13,7 +13,7 @@ block main
             img.p-mv__img(src="../img/mv03.jpg", alt="メインビジュアル01")
           picture.p-mv__picture.swiper-slide
             //- source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
-            img.p-mv__img(src="../img/mv02.jpg", decoding="async" alt="メインビジュアル02")
+            img.p-mv__img(src="../img/mv04.jpg", decoding="async" alt="メインビジュアル02")
           picture.p-mv__picture.swiper-slide
             //- source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
             img.p-mv__img(src="../img/mv01.png", decoding="async" alt="メインビジュアル03")
@@ -54,3 +54,27 @@ block main
               | Webサイトをリニューアルしました。Webサイトをリニューアルしました。Webサイトをリニューアルしました。Webサイトをリニューアルしました。
           a.p-pickup__link(href="/") 
             | View more
+    //- コンセプト
+    section.p-home-concept.l-home__concept
+      .p-home-concept__inner.l-container
+        .p-home-concept__img-wrapper 
+          picture.p-home-concept__picture
+            //- source.p-home-concept__img(srcset="../img/mv01.webp", type="image/webp")
+            img.p-home-concept__img(src="../img/concept02@2x.png", decoding="async" alt="メインビジュアル02")
+          picture.p-home-concept__picture
+            //- source.p-home-concept__img(srcset="../img/mv01.webp", type="image/webp")
+            img.p-home-concept__img(src="../img/concept01@2x.png", decoding="async" alt="メインビジュアル02")
+        .p-home-concept__content
+          h2.c-section-heading.c-section-heading--concept 
+            | Conce#[span p]t 
+          .p-home-concept__body 
+            p.p-home-concept__head 
+              | With the #[span fire] in the old car with 
+              | the #[span flame] of an old car.
+            p.p-home-concept__foot
+              | 木曾路はすべて山の中である。 
+              | あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の
+              | 岸であり、あるところは山の尾をめぐる谷の入り口である。
+            .p-home-concept__link-wrapper
+              a.c-button-primary(href="/")
+                | View more
