@@ -20,3 +20,43 @@
   @include fz(18, 20);
   @include lh(1.2);
 }
+
+.c-section-heading--gallery {
+  position: relative;
+  padding-top: 205px;
+  @include fz(32, 60);
+  @include lh(1.2);
+  letter-spacing: 1.1px;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+
+  @include mq(md) {
+    padding-top: 180px;
+    letter-spacing: 2.25px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 143px;
+    width: 1px;
+    background-color: $color-primary;
+
+    @include mq(md) {
+      height: 168px;
+    }
+  }
+}
+
+.c-section-heading--news {
+  @include fz(24, 40);
+  @include lh(1.2);
+  letter-spacing: 2px;
+
+  @include mq(md) {
+    letter-spacing: 4px;
+  }
+}

@@ -1,0 +1,57 @@
+@use "../global" as *;
+
+/* project .p-home-news
+   ----------------------------------------------------------------- */
+
+.p-home-news__contents {
+  margin-top: 42px;
+  @include mq(md) {
+    display: flex;
+    margin-top: 80px;
+  }
+}
+
+.p-home-news__items {
+  @include mq(md) {
+    width: 50%;
+  }
+}
+
+.p-home-news__item {
+  &:not(:first-child) {
+    padding-top: 24px;
+
+    @include mq(md) {
+      padding-top: 32px;
+    }
+  }
+}
+
+.p-home-news__img-wrapper {
+  width: 120%;
+
+  @include mq(md) {
+    position: relative;
+    width: 50%;
+  }
+}
+
+.p-home-news__img {
+  transform: translate(15%, 0);
+  @include mq(md) {
+    position: absolute;
+    top: 50%;
+    transform: translate(-15%, -58%);
+    max-width: 220%;
+    width: auto;
+    pointer-events: none;
+  }
+}
+
+.p-home-news__link-wrapper {
+  margin-top: 32px;
+
+  @include mq(md) {
+    margin-top: 57px;
+  }
+}

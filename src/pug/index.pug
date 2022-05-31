@@ -48,22 +48,22 @@ block main
             | NE#[span W]S
         .p-pickup__post
           .p-pickup__body
-            time.p-pickup__date 
+            time.p-pickup__date(datetime="2020-09-28")
               | 2020.09.28
             h3.p-pickup__title 
               | Webサイトをリニューアルしました。Webサイトをリニューアルしました。Webサイトをリニューアルしました。Webサイトをリニューアルしました。
           a.p-pickup__link(href="/") 
             | View more
     //- コンセプト
-    section.p-home-concept.l-home__concept
+    section#concept.p-home-concept.l-home__concept
       .p-home-concept__inner.l-container
         .p-home-concept__img-wrapper 
           picture.p-home-concept__picture
             //- source.p-home-concept__img(srcset="../img/mv01.webp", type="image/webp")
-            img.p-home-concept__img(src="../img/concept02@2x.png", decoding="async" alt="メインビジュアル02")
+            img.p-home-concept__img(src="../img/concept02@2x.png", width="231" height="488" loading="lazy" alt="コンセプトイメージ1")
           picture.p-home-concept__picture
             //- source.p-home-concept__img(srcset="../img/mv01.webp", type="image/webp")
-            img.p-home-concept__img(src="../img/concept01@2x.png", decoding="async" alt="メインビジュアル02")
+            img.p-home-concept__img(src="../img/concept01@2x.png", width="231" height="488" loading="lazy" alt="コンセプトイメージ2")
         .p-home-concept__content
           h2.c-section-heading.c-section-heading--concept 
             | Conce#[span p]t 
@@ -78,3 +78,59 @@ block main
             .p-home-concept__link-wrapper
               a.c-button-primary(href="/")
                 | View more
+    //- ギャラリー
+    section#gallery.p-home-gallery.l-home__gallery
+      .l-container
+        .p-home-gallery__inner
+          .p-home-gallery__heading 
+            h1.c-section-heading.c-section-heading--gallery 
+              | G#[span A]LLERY
+          .p-home-gallery__photos
+            picture.p-home-gallery__picture
+              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+              img.p-home-gallery__img(src="../img/gallery-lg.png", alt="ギャラリーイメージ")
+            picture.p-home-gallery__picture
+              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+              img.p-home-gallery__img(src="../img/gallery01.png", alt="ギャラリーイメージ")
+            picture.p-home-gallery__picture
+              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+              img.p-home-gallery__img(src="../img/gallery02.png", alt="ギャラリーイメージ")
+            picture.p-home-gallery__picture
+              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+              img.p-home-gallery__img(src="../img/gallery03.png", alt="ギャラリーイメージ")
+            picture.p-home-gallery__picture
+              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+              img.p-home-gallery__img(src="../img/gallery04.png", alt="ギャラリーイメージ")
+        .p-home-gallery__link-wrapper 
+          a.c-button-primary(href="/") 
+            | View more
+    //- ニュース
+    section.p-home-news.l-home__news 
+      .l-container
+        .p-home-news__heading 
+          h2.c-section-heading.c-section-heading--news 
+            | NE#[span W]S
+        .p-home-news__contents
+          article.p-home-news__items 
+            a.p-home-news__item.p-news-item(href="/")
+              time.p-news-item__date(datetime="2020-09-28")
+                | 2020.09.28
+              h3.p-news-item__title 
+                | Webサイトをリニューアルしました。
+            a.p-home-news__item.p-news-item(href="/")
+              time.p-news-item__date(datetime="2020-09-28")
+                | 2020.09.28
+              h3.p-news-item__title 
+                | 東ざかいの桜沢から、西の十曲峠まで、木曾十一宿は。
+            a.p-home-news__item.p-news-item(href="/")
+              time.p-news-item__date(datetime="2020-09-28")
+                | 2020.09.28
+              h3.p-news-item__title 
+                | 新車が入荷しました。
+            .p-home-news__link-wrapper
+              a.c-button-primary(href="/") 
+                | View more
+          .p-home-news__img-wrapper 
+            picture.p-home-news__picture
+              //- source.p-home-news__img(srcset="../img/mv01.webp", type="image/webp")
+              img.p-home-news__img(src="../img/news@2x.png", alt="車の画像")
