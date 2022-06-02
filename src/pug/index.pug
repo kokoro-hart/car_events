@@ -78,59 +78,99 @@ block main
             .p-home-concept__link-wrapper
               a.c-button-primary(href="/")
                 | View more
-    //- ギャラリー
-    section#gallery.p-home-gallery.l-home__gallery
-      .l-container
-        .p-home-gallery__inner
-          .p-home-gallery__heading 
-            h1.c-section-heading.c-section-heading--gallery 
-              | G#[span A]LLERY
-          .p-home-gallery__photos
-            picture.p-home-gallery__picture
-              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-              img.p-home-gallery__img(src="../img/gallery-lg.png", alt="ギャラリーイメージ")
-            picture.p-home-gallery__picture
-              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-              img.p-home-gallery__img(src="../img/gallery01.png", alt="ギャラリーイメージ")
-            picture.p-home-gallery__picture
-              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-              img.p-home-gallery__img(src="../img/gallery02.png", alt="ギャラリーイメージ")
-            picture.p-home-gallery__picture
-              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-              img.p-home-gallery__img(src="../img/gallery03.png", alt="ギャラリーイメージ")
-            picture.p-home-gallery__picture
-              //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-              img.p-home-gallery__img(src="../img/gallery04.png", alt="ギャラリーイメージ")
-        .p-home-gallery__link-wrapper 
-          a.c-button-primary(href="/") 
-            | View more
-    //- ニュース
-    section.p-home-news.l-home__news 
-      .l-container
-        .p-home-news__heading 
-          h2.c-section-heading.c-section-heading--news 
-            | NE#[span W]S
-        .p-home-news__contents
-          article.p-home-news__items 
-            a.p-home-news__item.p-news-item(href="/")
-              time.p-news-item__date(datetime="2020-09-28")
-                | 2020.09.28
-              h3.p-news-item__title 
-                | Webサイトをリニューアルしました。
-            a.p-home-news__item.p-news-item(href="/")
-              time.p-news-item__date(datetime="2020-09-28")
-                | 2020.09.28
-              h3.p-news-item__title 
-                | 東ざかいの桜沢から、西の十曲峠まで、木曾十一宿は。
-            a.p-home-news__item.p-news-item(href="/")
-              time.p-news-item__date(datetime="2020-09-28")
-                | 2020.09.28
-              h3.p-news-item__title 
-                | 新車が入荷しました。
-            .p-home-news__link-wrapper
+    .p-gradation
+      .p-gradation__part
+      //- ラインナップ
+      section.p-home-lineup.l-home__lineup 
+        .p-home-lineup__inner 
+          .p-home-lineup__heading 
+            h2.c-section-heading.c-section-heading--lineup 
+              | L#[span I]NEUP
+            .p-home-lineup__slider.swiper
+              .swiper-wrapper
+                picture.p-home-lineup__picture.swiper-slide
+                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup@2x.png", alt="")
+                picture.p-home-lineup__picture.swiper-slide
+                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup01@2x.png", alt="")
+                picture.p-home-lineup__picture.swiper-slide
+                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup02@2x.png", alt="")
+                picture.p-home-lineup__picture.swiper-slide
+                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup03@2x.png", alt="")
+                picture.p-home-lineup__picture.swiper-slide
+                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup04@2x.png", alt="")
+              .p-home-lineup__contents 
+                h3.p-home-lineup__title.js-slider-title: span.is-clip-text
+                  | Mercedes-Benz B-Class F-CELL cars01
+                h3.p-home-lineup__title.js-slider-title: span.is-clip-text
+                  | Mercedes-Benz B-Class F-CELL cars02
+                h3.p-home-lineup__title.js-slider-title: span.is-clip-text
+                  | Mercedes-Benz B-Class F-CELL cars03
+                h3.p-home-lineup__title.js-slider-title: span.is-clip-text
+                  | Mercedes-Benz B-Class F-CELL cars04
+                h3.p-home-lineup__title.js-slider-title: span.is-clip-text
+                  | Mercedes-Benz B-Class F-CELL cars05
+              .swiper-pagination
+            .p-home-lineup__link-wrapper
               a.c-button-primary(href="/") 
                 | View more
-          .p-home-news__img-wrapper 
-            picture.p-home-news__picture
-              //- source.p-home-news__img(srcset="../img/mv01.webp", type="image/webp")
-              img.p-home-news__img(src="../img/news@2x.png", alt="車の画像")
+      //- ギャラリー
+      section#gallery.p-home-gallery.l-home__gallery
+        .l-container
+          .p-home-gallery__inner
+            .p-home-gallery__heading 
+              h1.c-section-heading.c-section-heading--gallery 
+                | G#[span A]LLERY
+            .p-home-gallery__photos
+              picture.p-home-gallery__picture
+                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery-lg.png", alt="ギャラリーイメージ")
+              picture.p-home-gallery__picture
+                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery01.png", alt="ギャラリーイメージ")
+              picture.p-home-gallery__picture
+                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery02.png", alt="ギャラリーイメージ")
+              picture.p-home-gallery__picture
+                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery03.png", alt="ギャラリーイメージ")
+              picture.p-home-gallery__picture
+                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery04.png", alt="ギャラリーイメージ")
+          .p-home-gallery__link-wrapper 
+            a.c-button-primary.c-button-primary--white(href="/") 
+              | View more
+      //- ニュース
+      section.p-home-news.l-home__news 
+        .l-container
+          .p-home-news__heading 
+            h2.c-section-heading.c-section-heading--news 
+              | NE#[span W]S
+          .p-home-news__contents
+            article.p-home-news__items 
+              a.p-home-news__item.p-news-item(href="/")
+                time.p-news-item__date(datetime="2020-09-28")
+                  | 2020.09.28
+                h3.p-news-item__title 
+                  | Webサイトをリニューアルしました。
+              a.p-home-news__item.p-news-item(href="/")
+                time.p-news-item__date(datetime="2020-09-28")
+                  | 2020.09.28
+                h3.p-news-item__title 
+                  | 東ざかいの桜沢から、西の十曲峠まで、木曾十一宿は。
+              a.p-home-news__item.p-news-item(href="/")
+                time.p-news-item__date(datetime="2020-09-28")
+                  | 2020.09.28
+                h3.p-news-item__title 
+                  | 新車が入荷しました。
+              .p-home-news__link-wrapper
+                a.c-button-primary(href="/") 
+                  | View more
+            .p-home-news__img-wrapper 
+              picture.p-home-news__picture
+                //- source.p-home-news__img(srcset="../img/mv01.webp", type="image/webp")
+                img.p-home-news__img(src="../img/news@2x.png", alt="車の画像")

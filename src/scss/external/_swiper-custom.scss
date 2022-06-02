@@ -29,3 +29,43 @@
 .p-mv .swiper-slide[class*="-next"] img {
   transform: translateX(-80vw);
 }
+
+
+.p-home-lineup {
+  .swiper-slide-active {
+    .p-home-lineup__img {
+      transition: transform 0.6s ease;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.p-home-lineup__img {
+  transition: transform 0.6s ease;
+}
+
+.p-home-lineup {
+  .swiper-pagination {
+  position: relative;
+  margin-top: 56px;
+
+  @include mq(md) {
+    margin-top: 72px;
+  }
+  }
+
+  .swiper-pagination-bullet {
+    width: 48px;
+    height: 1px;
+    border-radius: 0;
+    background: $color-primary-thin;
+
+    &:not(:first-child) {
+      margin-left: 12px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $color-accent;
+  }
+}

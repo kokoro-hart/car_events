@@ -5,7 +5,9 @@
 
 /* animation
    ----------------------------------------------------------------- */
+@use "animation/keyframes";
 @use "animation/is-slide-mask";
+@use "animation/is-clip-text";
 
 /* Foundation
    ----------------------------------------------------------------- */
@@ -37,6 +39,11 @@
 @use "project/p-counter";
 @use "project/p-pickup";
 @use "project/p-home-concept";
+@use "project/p-gradation";
+@use "project/p-home-lineup";
+@use "project/p-home-gallery";
+@use "project/p-home-news";
+@use "project/p-news-item";
 
 
 /* Utitlity (prefix: u- )

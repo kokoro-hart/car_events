@@ -1,0 +1,41 @@
+@use "../global" as *;
+
+/* project .p-home-lineup
+   ----------------------------------------------------------------- */
+
+.p-home-lineup {
+  text-align: center;
+}
+
+.p-home-lineup__slider {
+  margin-top: 32px;
+
+  @include mq(md) {
+    margin-top: 62px;
+  }
+}
+
+.p-home-lineup__img {
+  pointer-events: none;
+}
+
+.p-home-lineup__contents {
+  position: relative;
+  margin-top: 28px;
+  padding: 20px 0;
+}
+
+.p-home-lineup__title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $color-primary;
+  @include fz(18, 20);
+  @include lh(1.2);
+  font-family: $font-family-ja;
+}
+
+.p-home-lineup__link-wrapper {
+  margin-top: 42px;
+}

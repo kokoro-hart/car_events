@@ -21,6 +21,12 @@
   @include lh(1.2);
 }
 
+.c-section-heading--lineup {
+  @include fz(24, 32);
+  @include lh(1.2);
+  letter-spacing: 0.1em;
+}
+
 .c-section-heading--gallery {
   position: relative;
   padding-top: 205px;

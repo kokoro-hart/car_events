@@ -1,0 +1,21 @@
+@use "../global" as *;
+
+/* animation is-clip-text
+   ----------------------------------------------------------------- */
+
+.is-clip-text {
+  display: inline-block;
+  clip-path: inset(0 100% 0 0);
+}
+
+.is-anm-started {
+  .is-clip-text {
+    animation: marker 1s 0.5s both;
+  }
+}
+
+.is-anm-finished {
+  .is-clip-text {
+    animation: markerHide 0.5s both;
+  }
+}
