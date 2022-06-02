@@ -1,0 +1,27 @@
+/* animation keyframes
+   ----------------------------------------------------------------- */
+
+@keyframes marker {
+  60%,
+  100% {
+    clip-path: inset(0);
+  }
+}
+
+@keyframes markerBg {
+  60% {
+    clip-path: inset(0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+@keyframes markerHide {
+  0% {
+    clip-path: inset(0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
