@@ -42,7 +42,12 @@
   }
 }
 
-.c-button-primary--white {
+.c-button-primary--blend {
+  mix-blend-mode: difference;
   border: 1px solid $color-base;
   color: $color-base;
+
+  &::before {
+    background-color: $color-base;
+  }
 }
