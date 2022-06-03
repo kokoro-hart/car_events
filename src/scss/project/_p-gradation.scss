@@ -28,19 +28,35 @@
     z-index: -1;
     bottom: 0;
     right: 0;
-    width: 45%;
-    height: 65%;
-    background: linear-gradient(to bottom right, transparent 50%, $color-primary 50%);
+    transform: skewY(-45deg);
+    width: 100%;
+    height: 70%;
+    background: $color-primary;
+
+    @include mq(md) {
+      transform: skewY(0);
+      width: 45%;
+      height: 65%;
+      background: linear-gradient(to bottom right, transparent 50%, $color-primary 50%);
+    }
   }
 }
 
 .p-gradation__part {
   position: absolute;
-  z-index: -1;
   bottom: -5%;
   right: 0;
-  width: 56%;
-  height: 75%;
-  transform: skewY(12deg);
-  background: linear-gradient(to bottom right, transparent 50%, $color-accent 50%);
+  transform: skewY(-50deg);
+  background: $color-accent;
+  width: 100%;
+  height: 10%;
+
+  @include mq(md) {
+    z-index: -1;
+    bottom: -5%;
+    width: 56%;
+    height: 75%;
+    transform: skewY(12deg);
+    background: linear-gradient(to bottom right, transparent 50%, $color-accent 50%);
+  }
 }
