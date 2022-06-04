@@ -12,28 +12,28 @@ block main
             source.p-mv__img(srcset="../img/mv03.webp", type="image/webp")
             img.p-mv__img(src="../img/mv03.jpg", width="1440",height="1044", alt="車の内装")
           picture.p-mv__picture.swiper-slide
-            source.p-mv__img(srcset="../img/mv04.webp", type="image/webp")
-            img.p-mv__img(src="../img/mv04.jpg", width="1440",height="1044", decoding="async", alt="車のフロントマスク")
-          picture.p-mv__picture.swiper-slide
             source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
-            img.p-mv__img(src="../img/mv01.jpg", width="1440",height="1044", decoding="async", alt="車のサイド")
+            img.p-mv__img(src="../img/mv01.jpg", width="1440",height="1044", decoding="async", alt="車のフロントマスク")
+          picture.p-mv__picture.swiper-slide
+            source.p-mv__img(srcset="../img/mv04.webp", type="image/webp")
+            img.p-mv__img(src="../img/mv04.jpg", width="1440",height="1044", decoding="async", alt="車のサイド")
         .p-mv__content-wrapper.l-container.l-container--large
           .p-mv__content.js-slider-content
-            h2.p-mv__heading: span.is-slide-mask 
+            h2.p-mv__heading: span.is-marker 
               | Bring 
               br.u-hidden-lg-up
               | back memories
-            p.p-mv__lead: span.is-slide-mask
+            p.p-mv__lead: span.is-marker
               | Dolor sit amet.
           .p-mv__content.js-slider-content
-            h2.p-mv__heading: span.is-slide-mask
+            h2.p-mv__heading: span.is-marker
               | Sed eiusmod
-            p.p-mv__lead: span.is-slide-mask
+            p.p-mv__lead: span.is-marker
               | Tempor incidunt ut labore.
           .p-mv__content.js-slider-content
-            h2.p-mv__heading: span.is-slide-mask
+            h2.p-mv__heading: span.is-marker
               | Lorem ipsum
-            p.p-mv__lead: span.is-slide-mask
+            p.p-mv__lead: span.is-marker
               | Ad minim veniam.
         .p-mv__counter.p-counter
           span.p-counter__current: span#js-number.p-counter__number            
@@ -51,26 +51,26 @@ block main
             time.p-pickup__date(datetime="2020-09-28")
               | 2020.09.28
             h3.p-pickup__title 
-              | Webサイトをリニューアルしました。Webサイトをリニューアルしました。Webサイトをリニューアルしました。Webサイトをリニューアルしました。
+              | Webサイトをリニューアルしました。
           a.p-pickup__link(href="/") 
             | View more
     //- コンセプト
-    section#concept.p-home-concept.l-home__concept
+    section.p-home-concept.l-home__concept.js-trigger
       .p-home-concept__inner.l-container
-        .p-home-concept__img-wrapper 
-          picture.p-home-concept__picture
+        .p-home-concept__img-wrapper
+          picture.p-home-concept__picture.is-mask-right
             source.p-home-concept__img(srcset="../img/concept02.webp", type="image/webp")
-            img.p-home-concept__img(src="../img/concept02.jpg", width="231" height="488" loading="lazy" alt="イベント会場の外装")
-          picture.p-home-concept__picture
+            img.p-home-concept__img(src="../img/concept02.jpg", width="231" height="488" alt="イベント会場の外装")
+          picture.p-home-concept__picture.is-mask-right
             source.p-home-concept__img(srcset="../img/concept01.webp", type="image/webp")
-            img.p-home-concept__img(src="../img/concept01.jpg", width="231" height="488" loading="lazy" alt="イベント会場の中")
+            img.p-home-concept__img(src="../img/concept01.jpg", width="231" height="488" alt="イベント会場の中")
         .p-home-concept__content
-          h2.c-section-heading.c-section-heading--concept 
-            | Conce#[span p]t 
+          h2.c-section-heading.c-section-heading--concept.is-split-text
+            | Concept 
           .p-home-concept__body 
-            p.p-home-concept__head 
-              | With the #[span fire] in the old car with 
-              | the #[span flame] of an old car.
+            p.p-home-concept__head
+              | With the #[span.is-split-text fire] in the old car with 
+              | the #[span.is-split-text flame] of an old car.
             p.p-home-concept__foot
               | 木曾路はすべて山の中である。 
               | あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の
@@ -81,11 +81,11 @@ block main
     .p-gradation
       .p-gradation__part
       //- ラインナップ
-      section.p-home-lineup.l-home__lineup 
+      section.p-home-lineup.l-home__lineup.js-trigger
         .p-home-lineup__inner 
           .p-home-lineup__heading 
-            h2.c-section-heading.c-section-heading--lineup 
-              | L#[span I]NEUP
+            h2.c-section-heading.c-section-heading--lineup.is-split-text
+              | LINEUP
             .p-home-lineup__slider.swiper
               .swiper-wrapper
                 picture.p-home-lineup__picture.swiper-slide
@@ -119,39 +119,39 @@ block main
               a.c-button-primary(href="/") 
                 | View more
       //- ギャラリー
-      section#gallery.p-home-gallery.l-home__gallery
+      section#gallery.p-home-gallery.l-home__gallery.js-trigger
         .l-container
           .p-home-gallery__inner
             .p-home-gallery__heading 
-              h1.c-section-heading.c-section-heading--gallery 
-                | G#[span A]LLERY
+              h1.c-section-heading.c-section-heading--gallery.is-split-text
+                | GALLERY
             .p-home-gallery__photos
-              picture.p-home-gallery__picture
+              picture.p-home-gallery__picture.is-mask-right.is-mask-right--blend
                 source.p-home-gallery__img(srcset="../img/gallery-lg.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery-lg.jpg", width="512", height="529", loading="lazy" alt="イベント会場のギャラリー")
-              picture.p-home-gallery__picture
+                img.p-home-gallery__img(src="../img/gallery-lg.jpg", width="512", height="529", alt="イベント会場のギャラリー")
+              picture.p-home-gallery__picture.is-mask-right.is-mask-right--blend
                 source.p-home-gallery__img(srcset="../img/gallery01.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery01.jpg", width="256", height="257", loading="lazy" alt="イベント会場のギャラリー")
-              picture.p-home-gallery__picture
+                img.p-home-gallery__img(src="../img/gallery01.jpg", width="256", height="257", alt="イベント会場のギャラリー")
+              picture.p-home-gallery__picture.is-mask-right.is-mask-right--blend
                 source.p-home-gallery__img(srcset="../img/gallery02.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery02.jpg", width="256", height="257", loading="lazy" alt="イベント会場のギャラリー")
-              picture.p-home-gallery__picture
+                img.p-home-gallery__img(src="../img/gallery02.jpg", width="256", height="257", alt="イベント会場のギャラリー")
+              picture.p-home-gallery__picture.is-mask-right.is-mask-right--blend
                 source.p-home-gallery__img(srcset="../img/gallery03.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery03.jpg", width="256", height="257", loading="lazy" alt="イベント会場のギャラリー")
-              picture.p-home-gallery__picture
+                img.p-home-gallery__img(src="../img/gallery03.jpg", width="256", height="257", alt="イベント会場のギャラリー")
+              picture.p-home-gallery__picture.is-mask-right.is-mask-right--blend
                 source.p-home-gallery__img(srcset="../img/gallery04.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery04.jpg", width="256", height="257", loading="lazy" alt="イベント会場のギャラリー")
+                img.p-home-gallery__img(src="../img/gallery04.jpg", width="256", height="257", alt="イベント会場のギャラリー")
           .p-home-gallery__link-wrapper 
             a.c-button-primary.c-button-primary--blend(href="/") 
               | View more
       //- ニュース
-      section.p-home-news.l-home__news 
+      section.p-home-news.l-home__news.js-trigger
         .l-container
           .p-home-news__heading 
-            h2.c-section-heading.c-section-heading--news 
-              | NE#[span W]S
+            h2.c-section-heading.c-section-heading--news.is-split-text
+              | NEWS
           .p-home-news__contents
-            article.p-home-news__items 
+            article.p-home-news__items
               a.p-home-news__item.p-news-item(href="/")
                 time.p-news-item__date(datetime="2020-09-28")
                   | 2020.09.28
