@@ -21,34 +21,34 @@
 .l-home__concept {
   width: 100%;
   padding-top: 60px;
+  padding-bottom: 52px;
 
   @include mq(md) {
     padding-top: 123px;
-    padding-bottom: 52px;
   }
 }
 
 .l-home__lineup {
   width: 100%;
-  margin-top: 75px;
+  padding-top: 75px;
   
   @include mq(md) {
-    margin-top: 153px;
+    padding-top: 153px;
   }
 }
 
 .l-home__gallery {
-  margin-top: 84px;
+  padding-top: 84px;
 
   @include mq(md) {
-    margin-top: 194px;
+    padding-top: 194px;
   }
 }
 
 .l-home__news {
-  margin-top: 62px;
+  padding-top: 62px;
 
   @include mq(md) {
-    margin-top: 118px;
+    padding-top: 118px;
   }
 }
