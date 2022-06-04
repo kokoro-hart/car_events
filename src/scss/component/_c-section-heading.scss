@@ -28,16 +28,20 @@
 }
 
 .c-section-heading--gallery {
+  mix-blend-mode: difference;
   position: relative;
   padding-top: 205px;
+  color: $color-base;
   @include fz(32, 60);
   @include lh(1.2);
   letter-spacing: 1.1px;
   writing-mode: vertical-rl;
   text-orientation: sideways;
-
+    
   @include mq(md) {
     padding-top: 180px;
+    mix-blend-mode: normal;
+    color: $color-primary;
     letter-spacing: 2.25px;
   }
 
@@ -58,11 +62,13 @@
 }
 
 .c-section-heading--news {
+  color: $color-base;
   @include fz(24, 40);
   @include lh(1.2);
   letter-spacing: 2px;
 
   @include mq(md) {
+    color: $color-primary;
     letter-spacing: 4px;
   }
 }

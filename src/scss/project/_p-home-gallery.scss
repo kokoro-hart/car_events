@@ -3,19 +3,48 @@
 /* project .p-home-gallery
    ----------------------------------------------------------------- */
 
-.p-home-gallery {
-}
-
 .p-home-gallery__inner {
   display: flex;
   justify-content: space-between;
 }
 
 .p-home-gallery__heading {
+  position: relative;
   width: 38px;
 
   @include mq(md) {
     width: 72px;
+  }
+
+  @include mq(md, max) {
+    &::after {
+      content: "A";
+      position: absolute;
+      top: calc(200.5px + 1em);
+      color: $color-accent;
+      @include fz(32, 60);
+      @include lh(1.2);
+      letter-spacing: 1.1px;
+      writing-mode: vertical-rl;
+      text-orientation: sideways;
+      font-weight: 700;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 1;
+      transform: translateX(-50%);
+      height: 143px;
+      width: 1px;
+      background-color: $color-primary;
+
+      @include mq(md) {
+        height: 168px;
+      }
+    }
   }
 }
 
