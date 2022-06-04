@@ -52,6 +52,18 @@
   margin-top: 32px;
 
   @include mq(md) {
+    mix-blend-mode: normal;
     margin-top: 57px;
+  }
+}
+
+.p-home-news__link {
+  @include mq(md, max) {
+    color: $color-base;
+    border: 1px solid $color-base;
+
+    &::before {
+      background-color: $color-base;
+    }
   }
 }
