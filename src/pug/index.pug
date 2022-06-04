@@ -9,14 +9,14 @@ block main
       .p-mv__slider.swiper
         .swiper-wrapper
           picture.p-mv__picture.swiper-slide
-            //- source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
-            img.p-mv__img(src="../img/mv03.jpg", alt="メインビジュアル01")
+            source.p-mv__img(srcset="../img/mv03.webp", type="image/webp")
+            img.p-mv__img(src="../img/mv03.jpg", width="1440",height="1044", alt="車の内装")
           picture.p-mv__picture.swiper-slide
-            //- source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
-            img.p-mv__img(src="../img/mv04.jpg", decoding="async" alt="メインビジュアル02")
+            source.p-mv__img(srcset="../img/mv04.webp", type="image/webp")
+            img.p-mv__img(src="../img/mv04.jpg", width="1440",height="1044", decoding="async", alt="車のフロントマスク")
           picture.p-mv__picture.swiper-slide
-            //- source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
-            img.p-mv__img(src="../img/mv01.png", decoding="async" alt="メインビジュアル03")
+            source.p-mv__img(srcset="../img/mv01.webp", type="image/webp")
+            img.p-mv__img(src="../img/mv01.jpg", width="1440",height="1044", decoding="async", alt="車のサイド")
         .p-mv__content-wrapper.l-container.l-container--large
           .p-mv__content.js-slider-content
             h2.p-mv__heading: span.is-slide-mask 
@@ -59,11 +59,11 @@ block main
       .p-home-concept__inner.l-container
         .p-home-concept__img-wrapper 
           picture.p-home-concept__picture
-            //- source.p-home-concept__img(srcset="../img/mv01.webp", type="image/webp")
-            img.p-home-concept__img(src="../img/concept02@2x.png", width="231" height="488" loading="lazy" alt="コンセプトイメージ1")
+            source.p-home-concept__img(srcset="../img/concept02.webp", type="image/webp")
+            img.p-home-concept__img(src="../img/concept02.jpg", width="231" height="488" loading="lazy" alt="イベント会場の外装")
           picture.p-home-concept__picture
-            //- source.p-home-concept__img(srcset="../img/mv01.webp", type="image/webp")
-            img.p-home-concept__img(src="../img/concept01@2x.png", width="231" height="488" loading="lazy" alt="コンセプトイメージ2")
+            source.p-home-concept__img(srcset="../img/concept01.webp", type="image/webp")
+            img.p-home-concept__img(src="../img/concept01.jpg", width="231" height="488" loading="lazy" alt="イベント会場の中")
         .p-home-concept__content
           h2.c-section-heading.c-section-heading--concept 
             | Conce#[span p]t 
@@ -89,31 +89,31 @@ block main
             .p-home-lineup__slider.swiper
               .swiper-wrapper
                 picture.p-home-lineup__picture.swiper-slide
-                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
-                  img.p-home-lineup__img(src="../img/lineup@2x.png", alt="")
+                  source.p-home-lineup__img(srcset="../img/lineup01.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup01.png", alt="Mercedes-Benz B-Class Mercedes-Maybach")
                 picture.p-home-lineup__picture.swiper-slide
-                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
-                  img.p-home-lineup__img(src="../img/lineup01@2x.png", alt="")
+                  source.p-home-lineup__img(srcset="../img/lineup02.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup02.png", alt="Mercedes-Benz A-Class F-CELL")
                 picture.p-home-lineup__picture.swiper-slide
-                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
-                  img.p-home-lineup__img(src="../img/lineup02@2x.png", alt="")
+                  source.p-home-lineup__img(srcset="../img/lineup03.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup03.png", alt="Mercedes-Benz C-Class Stationwagon")
                 picture.p-home-lineup__picture.swiper-slide
-                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
-                  img.p-home-lineup__img(src="../img/lineup03@2x.png", alt="")
+                  source.p-home-lineup__img(srcset="../img/lineup04.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup04.png", alt="Mercedes-Benz S-Class All-Terrain")
                 picture.p-home-lineup__picture.swiper-slide
-                  //- source.p-home-lineup__img(srcset="../img/mv01.webp", type="image/webp")
-                  img.p-home-lineup__img(src="../img/lineup04@2x.png", alt="")
+                  source.p-home-lineup__img(srcset="../img/lineup05.webp", type="image/webp")
+                  img.p-home-lineup__img(src="../img/lineup05.png", alt="Mercedes-Benz B-Class Shooting Break")
               .p-home-lineup__contents 
                 h3.p-home-lineup__title.js-slider-title: span.is-clip-text
-                  | Mercedes-Benz B-Class F-CELL cars01
+                  | Mercedes-Benz B-Class Mercedes-Maybach
                 h3.p-home-lineup__title.js-slider-title: span.is-clip-text
-                  | Mercedes-Benz B-Class F-CELL cars02
+                  | Mercedes-Benz A-Class F-CELL
                 h3.p-home-lineup__title.js-slider-title: span.is-clip-text
-                  | Mercedes-Benz B-Class F-CELL cars03
+                  | Mercedes-Benz C-Class Stationwagon
                 h3.p-home-lineup__title.js-slider-title: span.is-clip-text
-                  | Mercedes-Benz B-Class F-CELL cars04
+                  | Mercedes-Benz S-Class All-Terrain
                 h3.p-home-lineup__title.js-slider-title: span.is-clip-text
-                  | Mercedes-Benz B-Class F-CELL cars05
+                  | Mercedes-Benz B-Class Shooting Break
               .swiper-pagination
             .p-home-lineup__link-wrapper
               a.c-button-primary(href="/") 
@@ -127,20 +127,20 @@ block main
                 | G#[span A]LLERY
             .p-home-gallery__photos
               picture.p-home-gallery__picture
-                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery-lg.png", alt="ギャラリーイメージ")
+                source.p-home-gallery__img(srcset="../img/gallery-lg.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery-lg.jpg", width="512", height="529", loading="lazy" alt="イベント会場のギャラリー")
               picture.p-home-gallery__picture
-                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery01.png", alt="ギャラリーイメージ")
+                source.p-home-gallery__img(srcset="../img/gallery01.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery01.jpg", width="256", height="257", loading="lazy" alt="イベント会場のギャラリー")
               picture.p-home-gallery__picture
-                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery02.png", alt="ギャラリーイメージ")
+                source.p-home-gallery__img(srcset="../img/gallery02.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery02.jpg", width="256", height="257", loading="lazy" alt="イベント会場のギャラリー")
               picture.p-home-gallery__picture
-                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery03.png", alt="ギャラリーイメージ")
+                source.p-home-gallery__img(srcset="../img/gallery03.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery03.jpg", width="256", height="257", loading="lazy" alt="イベント会場のギャラリー")
               picture.p-home-gallery__picture
-                //- source.p-home-gallery__img(srcset="../img/mv01.webp", type="image/webp")
-                img.p-home-gallery__img(src="../img/gallery04.png", alt="ギャラリーイメージ")
+                source.p-home-gallery__img(srcset="../img/gallery04.webp", type="image/webp")
+                img.p-home-gallery__img(src="../img/gallery04.jpg", width="256", height="257", loading="lazy" alt="イベント会場のギャラリー")
           .p-home-gallery__link-wrapper 
             a.c-button-primary.c-button-primary--blend(href="/") 
               | View more
@@ -168,9 +168,9 @@ block main
                 h3.p-news-item__title 
                   | 新車が入荷しました。
               .p-home-news__link-wrapper
-                a.c-button-primary(href="/") 
+                a.c-button-primary.p-home-news__link(href="/") 
                   | View more
             .p-home-news__img-wrapper 
               picture.p-home-news__picture
-                //- source.p-home-news__img(srcset="../img/mv01.webp", type="image/webp")
-                img.p-home-news__img(src="../img/news@2x.png", alt="車の画像")
+                source.p-home-news__img(srcset="../img/news.webp", type="image/webp")
+                img.p-home-news__img(src="../img/news.png", alt="")
