@@ -1,0 +1,49 @@
+@use "../global" as *;
+
+/* animation .is-split-text
+   ----------------------------------------------------------------- */
+
+.is-split-text {
+  span {
+    opacity: 0;
+  }
+}
+
+.is-active {
+  .is-split-text {
+      opacity: 1;
+
+    span {
+      opacity: 1;
+      display: inline-block;
+
+      @include animation(
+        $name: fadeIn,
+        $duration: 1.2s,
+        $timing-function: ease(out-quint),
+        $fill-mode: both
+      );
+      &:nth-child(1) {
+        animation-delay: 0.07s;
+      }
+      &:nth-child(7) {
+        animation-delay: 0.14s;
+      }
+      &:nth-child(4) {
+        animation-delay: 0.21s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.28s;
+      }
+      &:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      &:nth-child(5) {
+        animation-delay: 0.42s;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.49s;
+      }
+    }
+  }
+}

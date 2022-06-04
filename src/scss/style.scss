@@ -6,8 +6,10 @@
 /* animation
    ----------------------------------------------------------------- */
 @use "animation/keyframes";
-@use "animation/is-slide-mask";
+@use "animation/is-marker";
 @use "animation/is-clip-text";
+@use "animation/is-slide-mask";
+@use "animation/is-split-text";
 
 /* Foundation
    ----------------------------------------------------------------- */
