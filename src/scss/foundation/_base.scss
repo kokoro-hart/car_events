@@ -154,15 +154,6 @@ textarea {
   font: inherit;
 }
 
-//フォーカス時のoutline指定
-[type="checkbox"]:focus + label,
-textarea:focus,
-input:focus,
-a:focus,
-button:focus {
-  outline: 2px solid $color-accent;
-}
-
 :focus:not(:focus-visible),
 :focus:not(:focus-visible) + label {
   outline: 0; //キーボード操作"以外"でフォーカスされた際はoutlineを消す
