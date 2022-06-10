@@ -51,12 +51,12 @@ const app = {
                 [
                   '@babel/preset-env',
                   {
-                    // 必要なポリフィルを出力させる
-                    useBuiltIns: 'usage',
-                    corejs: {
-                      version: '3.22.5',
-                      proposals: true
-                    }
+                    // // 必要なポリフィルを出力させる
+                    // useBuiltIns: 'usage',
+                    // corejs: {
+                    //   version: '3.22.5',
+                    //   proposals: true
+                    // }
                   }
                 ],
                 ['@babel/preset-typescript']
@@ -148,7 +148,7 @@ const app = {
     }),
   ],
   //source-mapを出力する
-  devtool: "source-map",
+  // devtool: "source-map",
 
   // node_modules を監視（watch）対象から除外
   watchOptions: {
@@ -167,8 +167,9 @@ templates.forEach((template) => {
     new HtmlWebpackPlugin({
       filename: `${fileName}`, // ファイル名を指定
       template: template, // どのフォルダから読み込むのか指定
-      inject: true, // scriptタグの出力先
-      minify: false //本番環境でも圧縮するか
+      inject: 'body', // scriptタグの出力先
+      minify: false, //本番環境でも圧縮するか
+      favicon: './src/img/favicon.ico',
     }),
   );
 });
